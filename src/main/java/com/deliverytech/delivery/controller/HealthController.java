@@ -10,6 +10,11 @@ import java.util.Map;
 public class HealthController {
     @GetMapping("/health")
     public Map<String, String> health() {
-        return Map.of("status", "UP", "timestamp", LocalDateTime.now().toString(), "Service", "Delivery API");
+        return Map.of("status", "UP", "timestamp", LocalDateTime.now().toString(), "Service", "Delivery API", "javaVersion", System.getProperty("java.version"));
     }
+    @GetMapping("/info")
+    public AppInfo info() {
+        return new AppInfo("Delivery Tech API", "1.0.0", "[Vitor Kenzo Kuwabara]", "JDK 21", "Spring Boot 3.5.7");
+    }
+    public record AppInfo(String application, String version, String developer, String javaVersion, String framework) { }
 }
