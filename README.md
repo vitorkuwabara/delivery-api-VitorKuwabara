@@ -33,5 +33,5 @@ Sistema de delivery desenvolvido com Spring Boot e Java 21.
 - Profile: development
 
 # Desenvolvedor
-- [Vitor Kenzo Kuwabara] - [2025/2]
-- Desenvolvido com JDK 21 e Spring Boot 3.5.7
+[Vitor Kenzo Kuwabara] - [2025/2]
+Desenvolvido com JDK 21 e Spring Boot 3.5.7
